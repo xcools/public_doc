@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "hostyun.com",
+        "pigyun.com",
+        "ziyux.com"
+        
+      ]
+    }
+  ]
+}
