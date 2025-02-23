@@ -57,16 +57,17 @@
   "outbounds": [
     { "tag": "🎯 直连", "type": "direct" },
     { "tag": "🚀 代理", "type": "selector", "outbounds": ["{all}"] },
-    
-    { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 代理" },
-    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 代理", },
-    { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 代理", },
-    { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 代理", },
+    { "tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"] },
+
+    { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 代理"] },
+    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 代理" ]},
+    { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 代理" ]},
+    { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 代理" ]},
     { "tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🚀 代理", "🎯 直连"] },
-    { "tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🚀 代理", },
-    { "tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 代理", },
-    { "tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 代理", },
-    { "tag": "📲 Telegram", "type": "selector", "outbounds": ["🚀 代理", },
+    { "tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🚀 代理" ]},
+    { "tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 代理"] },
+    { "tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 代理"] },
+    { "tag": "📲 Telegram", "type": "selector", "outbounds": ["🚀 代理"] },
     { "tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 直连"] }
   ],
   
