@@ -43,14 +43,75 @@
 
 "inbounds": [
   {
-    "tag": "tun-in",
-    "type": "tun",
-    "inet4_address": "172.19.0.1/30",
-    "auto_route": true,
-    "strict_route": true,
-    "stack": "system",
-    "mtu": 9000,
-    "sniff": true
+
+"type": "tun",
+  "tag": "tun-in",
+  "interface_name": "tun0",
+  "address": [
+    "172.18.0.1/30",
+    "fdfe:dcba:9876::1/126"
+  ],
+  "mtu": 9000,
+  "auto_route": true,
+  "iproute2_table_index": 2022,
+  "iproute2_rule_index": 9000,
+  "auto_redirect": false,
+  "auto_redirect_input_mark": "0x2023",
+  "auto_redirect_output_mark": "0x2024",
+  "strict_route": true,
+  "route_address": [
+    "0.0.0.0/1",
+    "128.0.0.0/1",
+    "::/1",
+    "8000::/1"
+  ],
+
+  "route_exclude_address": [
+    "10.0.0.0/8",
+    "fc00::/7"
+  ],
+  "endpoint_independent_nat": false,
+  "udp_timeout": "5m",
+  "stack": "system",
+  "include_interface": [
+    "lan0"
+  ],
+  "exclude_interface": [
+    "lan1"
+  ],
+  "include_uid": [
+    0
+  ],
+  "include_uid_range": [
+    "1000:99999"
+  ],
+  "exclude_uid": [
+    1000
+  ],
+  "exclude_uid_range": [
+    "1000:99999"
+  ],
+  "include_android_user": [
+    0,
+    10
+  ],
+  "include_package": [
+    "com.android.chrome"
+  ],
+  "exclude_package": [
+    "com.android.captiveportallogin"
+  ],
+  "platform": {
+    "http_proxy": {
+      "enabled": false,
+      "server": "127.0.0.1",
+      "server_port": 8080,
+      "bypass_domain": [],
+      "match_domain": []
+    }
+  }
+
+
   }
 ],
 
